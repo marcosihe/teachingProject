@@ -1,0 +1,16 @@
+.btn-radious {
+    border-radius: 15px;
+}
+
+.logoSize {
+    width: 3.5em;
+}
+
+.footerLogoSize {
+    width: 9em;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: white;
+}
