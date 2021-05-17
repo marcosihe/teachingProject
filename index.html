@@ -8,7 +8,7 @@
     <meta name="author" content="Marcos E. Herrera" />
     <meta name="keywords" content="Maquinarias viales, Viazzo" />
     <title>Principal</title>
-    <link rel="shortcut icon" href="img/Brand/tractor.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Brand/tractor.ico" type="image/x-icon" />
     <!-- Estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <!-- Mis estilos -->
@@ -22,18 +22,19 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="img/Brand/logo-blanco.png" alt="Logo de la página" class="logoSize">
+                    <img src="img/Brand/logo-blanco.png" alt="Logo de la página" class="logoSize" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <span class="navbar-toggler-icon"></span>
+          </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Galeria</a>
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Nosotros</a>
@@ -42,60 +43,219 @@
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
                         <li>
-                            <button type="button" class="btn btn-outline-secondary ms-4 btn-radious">Iniciar sesión</button>
+                            <button type="button" class="btn btn-outline-secondary ms-4 btn-radious" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Iniciar sesión
+                </button>
                         </li>
                         <li>
-                            <button type="button" class="btn btn-outline-secondary ms-4 btn-radious">Registrarse</button>
+                            <button type="button" class="btn btn-outline-secondary ms-4 btn-radious" data-bs-toggle="modal" data-bs-target="#modalDeRegistro">
+                  Registrarse
+                </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <!-- Modal - Iniciar sesión -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Formulario -->
+                        <div class="mb-3">
+                            <label for="email1" class="form-label">Usuario o e-mail</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email1"
+                  placeholder="nombre@email.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="clave1" class="form-label"
+                  >Clave</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="clave1"
+                  placeholder="******"
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal - Registrarse -->
+      <div
+        class="modal fade"
+        id="modalDeRegistro"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Crear cuenta</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Formulario -->
+              <div class="mb-3">
+                <label for="nomre2" class="form-label"
+                  >Nombre</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nomre2"
+                  placeholder="Juan"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="apellido2" class="form-label"
+                  >Apellido</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido2"
+                  placeholder="Perez"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email2" class="form-label"
+                  >E-mail</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email2"
+                  placeholder="nombre@email.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="clave2" class="form-label"
+                  >Clave</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="clave2"
+                  placeholder="******"
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Enviar datos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="bg-dark">
-        <section class="container">
-            <div class="row">
-                <!--Logo / Imagen -->
-                <div class="col-sm-12 col-md-4 col-lg-4 mt-3">
-                    <img src="img/Brand/logo-blanco.png" alt="Logo de la página" class="footerLogoSize">
-                </div>
+      <section class="container">
+        <div class="row">
+          <!--Logo / Imagen -->
+          <div class="col-sm-12 col-md-4 col-lg-4 mt-3">
+            <img
+              src="img/Brand/logo-blanco.png"
+              alt="Logo de la página"
+              class="footerLogoSize"
+            />
+          </div>
 
-                <!-- Links hacia inicio/galeria/nosotros/contacto -->
-                <div class="col-sm-12 col-md-4 col-lg-4 mt-3 d-flex align-items-center justify-content-center">
-                    <ul class="py-1 mb-1">
-                        <li class="py-1"><a href="#" class="footerLink">Inicio</a></li>
-                        <li class="py-1"><a href="#" class="footerLink">Galeria</a></li>
-                        <li class="py-1"><a href="#" class="footerLink">Nosotros</a></li>
-                        <li class="py-1"><a href="#" class="footerLink">Contacto</a></li>
-                    </ul>
-                </div>
+          <!-- Links hacia inicio/galeria/nosotros/contacto -->
+          <div
+            class="
+              col-sm-12 col-md-4 col-lg-4
+              mt-3
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <ul class="py-1 mb-1">
+              <li class="py-1"><a href="#" class="footerLink">Inicio</a></li>
+              <li class="py-1"><a href="#" class="footerLink">Galeria</a></li>
+              <li class="py-1"><a href="#" class="footerLink">Nosotros</a></li>
+              <li class="py-1"><a href="#" class="footerLink">Contacto</a></li>
+            </ul>
+          </div>
 
-                <!-- Redes sociales / acá se pueden linkear con la página de error404.html -->
-                <div class="row col-sm-12 col-md-4 col-lg-4 mt-3">
-                    <ul class="d-inline-flex justify-content-between align-self-center">
-                        <li>
-                            <a href="#" class="text-light"><i class="fab fa-facebook fa-3x mr-2"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-light"><i class="fab fa-twitter fa-3x mr-2"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-light"><i class="fab fa-instagram fa-3x mr-2"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <!-- Redes sociales / acá se pueden linkear con la página de error404.html -->
+          <div class="row col-sm-12 col-md-4 col-lg-4 mt-3">
+            <ul class="d-inline-flex justify-content-between align-self-center">
+              <li>
+                <a href="#" class="text-light"
+                  ><i class="fab fa-facebook fa-3x mr-2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-light"
+                  ><i class="fab fa-twitter fa-3x mr-2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-light"
+                  ><i class="fab fa-instagram fa-3x mr-2"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="text-light text-center">
-                <hr>
-                <p>&copy Todos los derechos reservados</p>
-                <br>
-            </div>
-        </section>
+        <div class="text-light text-center">
+          <hr />
+          <p>&copy Todos los derechos reservados</p>
+          <br />
+        </div>
+      </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
